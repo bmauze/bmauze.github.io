@@ -1,3 +1,55 @@
-theme: jekyll-theme-minimal
-title: Octocat's homepage
-description: Bookmark this to keep an eye on my project updates!
+# Developer's Note: This is a sample _config.yml file offered with
+# jekyll-theme-prologue for your convenience. To use it, move it to your
+# project's root directory. Please note that the following lines are
+# NECESSARY for Prologue to work correctly:
+#
+# theme: jekyll-theme-prologue
+# collections: [sections]
+#
+# They activate the theme and tell Jekyll to find your homepage content
+# in /_sections. Note where "sections" starts with an underscore
+# and where it doesn't. The social settings will make links to
+# Twitter, etc., but only if you give the URL.
+#
+# Also, be sure to customize url and baseurl for your site.
+#
+# ---------------------------------------------------------------
+title: Benjamin Mauze
+subtitle: Associate Professor at LGP, ENIT
+description: >- # this means to ignore newlines until "baseurl:"
+  This aim to create a website to show my research.
+author: Benjamin Mauze
+email: benjamin.mauze@gmail.com
+avatar: assets/images/BphotoPro.jpg
+
+domain: bmauze.github.io
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: https://bmauze.github.io # the base hostname & protocol for your site
+
+# Social settings
+# Make sure to include the full url including protocol, e.g. https://github.com/chrisbobbe
+#twitter_url:
+#facebook_url:
+#googleplus_url:
+#instagram_url:
+github_url: https://github.com/bmauze
+researchGate_url: https://www.researchgate.net/profile/Benjamin-Mauze
+#linkedin_url: 
+#stackoverflow_url:
+#pinterest_url:
+#slack_url:
+#dribbble_url:
+
+# Google Analytics Tracking ID goes here:
+# google_analytics:
+# SASS options
+sass:
+  style: compressed
+# The following settings are NECESSARY for the Prologue theme to run:
+remote_theme: chrisbobbe/jekyll-theme-prologue
+collections: [sections]
+permalink: /blog/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
